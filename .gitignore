@@ -5,4 +5,4 @@ obj/tap.csproj.nuget.dgspec.json
 obj/tap.csproj.nuget.g.props
 obj/tap.csproj.nuget.g.targets
 obj/Debug/*
-
+bin/Debug/*
