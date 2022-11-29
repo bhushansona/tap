@@ -1,0 +1,8 @@
+Tap/bin/Debug/*
+obj/project.assets.json
+obj/project.nuget.cache
+obj/tap.csproj.nuget.dgspec.json
+obj/tap.csproj.nuget.g.props
+obj/tap.csproj.nuget.g.targets
+obj/Debug/*
+

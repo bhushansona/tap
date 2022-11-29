@@ -1,4 +1,4 @@
-// See https://aka.ms/new-console-template for more information
+﻿// See https://aka.ms/new-console-template for more information
 
 Console.WriteLine("Hello, Tap!");
 Console.WriteLine("Specify .csv with Traveled Data (Distance Traveled, Traveled Unit, and Cost Per Distance Traveled)");
@@ -75,3 +75,4 @@ while (isContinue)
     } 
     Console.WriteLine("Enter operation no (1. Add, 2. Delete, 3. Update, 4. Show, 5. Get Fare, 6. All fares) OR 7 to exit: ");
 }
+
