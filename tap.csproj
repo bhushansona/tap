@@ -1,10 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Content Include="Tap\UI\GetData.cs" />
+    <Content Include="Tap\input.csv" />
+    <Content Include="Tap\Middleware\DriverManager.cs" />
+    <Content Include="Tap\Middleware\FareCalculator.cs" />
+    <Content Include="Tap\Models\DriverProfile.cs" />
+    <Content Include="Tap\Models\TraveledData.cs" />
+    <Content Include="Tap\Models\FareDetail.cs" />
+    <Content Include="Tap\UI\ManageDrivers.cs" />
+    <Content Include="Tap\Interfaces\IManageDriver.cs" />
+    <Content Include="Tap\Interfaces\ICalculateFare.cs" />
+    <Content Include="Tap\Interfaces\IGetData.cs" />
+  </ItemGroup>
 </Project>

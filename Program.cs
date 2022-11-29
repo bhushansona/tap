@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 Console.WriteLine("Hello, Tap!");
-Console.WriteLine("Specify .csv with Traveled Data (Distance Traveled, Traveled Unit, and Cost Per Distance Traveled)");
+Console.Write("Specify .csv with Traveled Data (Distance Traveled, Traveled Unit, and Cost Per Distance Traveled): ");
 var csvPath = Console.ReadLine();
 Tap.Interfaces.IGetData dataProcessor = new Tap.UI.GetData();
 Tap.Interfaces.IManageDriver driverManager = new Tap.UI.ManageDrivers();
