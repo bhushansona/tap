@@ -18,5 +18,6 @@
     <Content Include="Tap\Interfaces\IManageDriver.cs" />
     <Content Include="Tap\Interfaces\ICalculateFare.cs" />
     <Content Include="Tap\Interfaces\IGetData.cs" />
+    <Content Include="Program.cs" />
   </ItemGroup>
 </Project>

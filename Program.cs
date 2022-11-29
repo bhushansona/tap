@@ -22,6 +22,7 @@ Console.WriteLine("  7. Exit.");
 bool isContinue = true;
 while (isContinue)
 {
+    Console.Write("Enter operation no: ");
     int i = 0;
     bool isValid = Int32.TryParse(Console.ReadLine(), out i);
     if (!isValid)
@@ -73,6 +74,5 @@ while (isContinue)
             Console.WriteLine("Invalid input. Enter again: "); 
             break; 
     } 
-    Console.WriteLine("Enter operation no (1. Add, 2. Delete, 3. Update, 4. Show, 5. Get Fare, 6. All fares) OR 7 to exit: ");
+    Console.WriteLine("Select operation (1. Add, 2. Delete, 3. Update, 4. Show, 5. Get Fare, 6. All fares) OR 7 to exit: ");
 }
-
