@@ -2,6 +2,9 @@ using Tap.Models;
 
 namespace Tap.Interfaces
 {
+    /// <summary>
+    /// Interface used for managing drivers
+    /// </summary>
     public interface IManageDriver
     {
         bool Register(DriverProfile profile);
