@@ -29,6 +29,7 @@ namespace Tap.UI
             DriverProfile profile;
             bool deleted = manager.Remove(driverName, out profile);
             deletedProfile = deleted ? profile : null;
+            profile.IsDeleted = true;
             return deleted;
         }
 

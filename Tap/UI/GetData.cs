@@ -40,21 +40,43 @@ namespace Tap.UI
                         var profileToRegister = GetDriverData();
                         bool added = driverManager.Register(profileToRegister);
                         if (added)
+                        {
+                            Console.WriteLine($"Driver {profileToRegister.Name} registered successfully.");
                             fareCalculator.Calculate(profileToRegister, data);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Failed to register driver!!");
+                        }
                         break;
                     // Delete 
                     case 2:
-                        Console.WriteLine("***** Enter driver Name: ");
+                        Console.Write("  Enter driver Name to delete: ");
                         bool deleted = driverManager.Delete(Console.ReadLine());
                         if (deleted)
-                            fareCalculator.Calculate(driverManager.GetDeleted(), data);
+                        {
+                            DriverProfile profileDeleted = driverManager.GetDeleted();
+                            Console.WriteLine($"Driver {profileDeleted.Name} deleted successfully.");
+                            fareCalculator.Calculate(profileDeleted, data);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Failed to remove driver!!");
+                        }
                         break;
                     // Update 
                     case 3:
                         var profileToUpdate = GetDriverData();
                         bool updated = driverManager.Update(profileToUpdate);
                         if (updated)
+                        {
+                            Console.WriteLine($"Driver {profileToUpdate.Name} updated successfully.");
                             fareCalculator.Calculate(profileToUpdate, data);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Failed to update driver!!");
+                        }
                         break;
                     // Show Drivers 
                     case 4:
@@ -75,7 +97,7 @@ namespace Tap.UI
                         isContinue = false;
                         break;
                     default:
-                        Console.WriteLine("Invalid input. Enter again: ");
+                        Console.WriteLine("Invalid input. Enter again. ");
                         break;
                 }
                 Console.WriteLine("Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: ");

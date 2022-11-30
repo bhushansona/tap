@@ -8,5 +8,6 @@ namespace Tap.Models
         public string VehicleType { get; set; }
         public double BasePrice { get; set; }
         public double BaseDistance { get; set; }
+        public bool IsDeleted{get;set;}
     }
 }
