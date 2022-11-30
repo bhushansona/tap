@@ -51,11 +51,11 @@ namespace Tap.MiddleWare
             if (drivers.Any(d => d.Name == newProfile.Name))
             {
                 DriverProfile profile = drivers.First(d => d.Name == newProfile.Name);
-                profile.Surname = newProfile.Surname;
-                profile.Email = newProfile.Email;
+                profile.Surname = string.IsNullOrWhiteSpace(newProfile.Surname)?profile.Surname:newProfile.Surname;
+                profile.Email = string.IsNullOrWhiteSpace(newProfile.Email)?profile.Email:newProfile.Email;
                 profile.BaseDistance = newProfile.BaseDistance;
                 profile.BasePrice = newProfile.BasePrice;
-                profile.VehicleType = newProfile.VehicleType;
+                profile.VehicleType = string.IsNullOrWhiteSpace(newProfile.VehicleType)?profile.VehicleType:newProfile.VehicleType;
 
                 return true;
             }

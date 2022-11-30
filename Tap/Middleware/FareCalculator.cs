@@ -14,7 +14,11 @@ namespace Tap.MiddleWare{
         public FareDetail Calculate(DriverProfile profile, List<TraveledData> data) 
         {  
             if(profile.IsDeleted && allFares.Any(p => p.DriverName == profile.Name))
-                allFares.Remove(allFares.First(f => f.DriverName == profile.Name));
+            {
+                FareDetail detail = allFares.First(f => f.DriverName == profile.Name);
+                allFares.Remove(detail);
+                return detail;
+            }
                 
             var fare = new FareDetail();  
             data.ForEach(d =>  

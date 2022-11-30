@@ -75,7 +75,7 @@ namespace Tap.UI
                         }
                         else
                         {
-                            Console.WriteLine("Failed to update driver!!");
+                            Console.WriteLine("Failed to update driver profile!! Driver is mandatory.");
                         }
                         break;
                     // Show Drivers 
@@ -120,12 +120,20 @@ namespace Tap.UI
             Console.Write("  Enter Vehicle Type: "); 
             data.VehicleType = Console.ReadLine();
             Console.Write("  Enter driver's Base Fare Price: "); 
-            data.BasePrice = Convert.ToDouble(Console.ReadLine());
+            data.BasePrice = ParseNum(Console.ReadLine());
             Console.Write("  Enter driver's Base Fare Distance: "); 
-            data.BaseDistance = Convert.ToDouble(Console.ReadLine());
+            data.BaseDistance = ParseNum(Console.ReadLine());
             return data;
         }
         
+        private double ParseNum(string str)
+        {
+            double number;
+            if(double.TryParse(str,out number))
+                return number > 0 ? number : 0;
+            return 0;
+        }
+
         /// <summary>
         /// Prints driver data on application console
         /// </summary>
