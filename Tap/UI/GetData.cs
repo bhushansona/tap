@@ -1,6 +1,7 @@
 using Tap.Models;
 using Tap.Interfaces;
 using Tap.MiddleWare;
+using System.Text.RegularExpressions;
 
 namespace Tap.UI
 {
@@ -123,6 +124,10 @@ namespace Tap.UI
             data.BasePrice = ParseNum(Console.ReadLine());
             Console.Write("  Enter driver's Base Fare Distance: "); 
             data.BaseDistance = ParseNum(Console.ReadLine());
+
+            if (!ValidEmail(data.Email))
+                data.Email = string.Empty;
+
             return data;
         }
         
@@ -134,6 +139,11 @@ namespace Tap.UI
             return 0;
         }
 
+        private bool ValidEmail(string str)
+        {
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            return regex.IsMatch(str);
+        }
         /// <summary>
         /// Prints driver data on application console
         /// </summary>
