@@ -111,7 +111,7 @@ namespace Tap.UI
         public DriverProfile GetDriverData()
         {
             DriverProfile data = new DriverProfile(); 
-            Console.Write("  Enter driver Name: "); 
+            Console.Write("  Enter driver Name*: "); 
             data.Name = Console.ReadLine();
             Console.Write("  Enter driver Surname: "); 
             data.Surname = Console.ReadLine();
