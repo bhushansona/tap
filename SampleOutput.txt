@@ -1,0 +1,61 @@
+Hello, Tap user!
+Specify .csv with Traveled Data (Distance Traveled, Traveled Unit, and Cost Per Distance Traveled): input.csv
+Inputs are captured from: input.csv
+Total records for traveled Data: 1
+List of operations to be performed: 
+  1. Register Driver.
+  2. Delete Driver.
+  3. Update Driver.
+  4. Show Drivers.
+  5. Get cheapest Fare (with Driver).
+  6. Show all Fares (with Driver).
+  7. Exit.
+ ******** Enter operation no: 1
+  Enter driver Name*: A
+  Enter driver Surname: S1
+  Enter driver Email: as1@test.com
+  Enter Vehicle Type: V
+  Enter driver's Base Fare Price: 200
+  Enter driver's Base Fare Distance: 150
+Driver A registered successfully.
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: B
+Invalid input. Enter again. 
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 1
+  Enter driver Name*: B
+  Enter driver Surname: S2
+  Enter driver Email: bs2@test.com
+  Enter Vehicle Type: V
+  Enter driver's Base Fare Price: 300
+  Enter driver's Base Fare Distance: 250
+Driver B registered successfully.
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 4
+Name                 | Surname              | Email                | VehicleType          | BaseDistance         | BasePrice            |
+A                    | S1                   | as1@test.com         | V                    | 150                  | 200                  |
+B                    | S2                   | bs2@test.com         | V                    | 250                  | 300                  |
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 5
+Cheaper fare is: 300 with A
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 2
+  Enter driver Name to delete: A
+Driver A deleted successfully.
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 3
+  Enter driver Name*: B
+  Enter driver Surname: S3
+  Enter driver Email: 
+  Enter Vehicle Type: 
+  Enter driver's Base Fare Price: 
+  Enter driver's Base Fare Distance: 
+Driver B updated successfully.
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 4
+Name                 | Surname              | Email                | VehicleType          | BaseDistance         | BasePrice            |
+B                    | S3                   | bs2@test.com         | V                    | 0                    | 0                    |
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+ ******** Enter operation no: 7
+Select operation (1. Add, 2. Delete, 3. Update, 4. Show drivers, 5. Lowest Fare, 6. All fares) OR 7 to exit: 
+@bhushansona ➜ /workspaces/tap (main) $ 
